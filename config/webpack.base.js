@@ -83,8 +83,8 @@ module.exports = {
         loader: 'json-loader'
       },
       {
-        test: /\.(png|jpg|gif|woff|woff2|eot|ttf)$/,
-        loader: 'url-loader?limit=1024'
+        test: /\.(png|jpg|gif|woff|woff2|eot|ttf|otf)$/,
+        loader: 'url-loader?limit=1'
       },
       {
         test: /\.(mp4|ogg|svg)$/,
@@ -102,7 +102,8 @@ module.exports = {
       filename: './index.html', // 输出文件【注意：这里的根路径是module.exports.output.path】
       showErrors: true,
       inject: 'body',
-      hash: true
+      hash: true,
+      favicon: './src/img/favicon.jpg'
     }),
     new CleanWebpackPlugin()
   ]
