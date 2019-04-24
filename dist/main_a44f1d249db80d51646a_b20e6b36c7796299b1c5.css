@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: spag;
-  src: url(dist/60fb20a3281bf830ca241b46b9b5bcc4.ttf);
+  src: url(60fb20a3281bf830ca241b46b9b5bcc4.ttf);
 }
 html,
 body {
@@ -46,7 +46,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(dist/e2be01fca20d0c26800a664b344533f4.jpg);
+  background-image: url(e2be01fca20d0c26800a664b344533f4.jpg);
   background-position: center;
 }
 .main__homePage_context__1-49w123 {
@@ -116,7 +116,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(dist/e9cefa8b8a85391eec44205b4aa80e45.jpg);
+  background-image: url(e9cefa8b8a85391eec44205b4aa80e45.jpg);
   background-position: center;
 }
 .main__aboutMePage_context__1EEpK123 {
@@ -174,7 +174,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(dist/cbaaec06a07510ae173de175081f4117.jpg);
+  background-image: url(cbaaec06a07510ae173de175081f4117.jpg);
   background-position: center;
 }
 .main__skillPage_context__2YZGY123 {
@@ -378,7 +378,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(dist/a5ca813e183779cf6f85c4831001b667.jpg);
+  background-image: url(a5ca813e183779cf6f85c4831001b667.jpg);
   background-position: center;
 }
 .main__expPage_context__wW9X-123 .main__timeLine__NllAn123 {
@@ -442,7 +442,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(dist/446b57669c7b5fc909d0faca8a313861.jpg);
+  background-image: url(446b57669c7b5fc909d0faca8a313861.jpg);
   background-position: center;
 }
 .main__worksPage_worksSet__3H5s3123 {
@@ -494,7 +494,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(dist/5b5afa3a4253f4e1bf10f3dc92069415.jpg);
+  background-image: url(5b5afa3a4253f4e1bf10f3dc92069415.jpg);
 }
 .main__contactPage_context__b4wfj123 {
   width: 400px;

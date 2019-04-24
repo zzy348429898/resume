@@ -8,7 +8,7 @@ let config = {
     path: path.resolve(__dirname, '../dist'),
     // filename: 'bundle.js',
     // filename: '[name]_[id]_[hash]',
-    publicPath: 'dist/'
+    publicPath: ''
   }
 };
 // console.log(merge(baseConfig, config));
