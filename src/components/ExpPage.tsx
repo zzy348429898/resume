@@ -7,18 +7,20 @@ const ExpPage: React.StatelessComponent = () => (
     <div className={css.expPage_context}>
       <ul className={css.timeLine}>
         <li>
+          <span className={css.timeLineLeft}>2016 - 2019</span>
           <h2>北京科技大学</h2>
           <p>
-            硕士 材料工程专业
+            <span className={css.green}>硕士</span> {'<'}材料工程专业{'>'}
           </p>
           <p>
-            
+            期间使用python神经网络建立材料流变应力模型，进行有限元热力过程模拟。
           </p>
         </li>
         <li>
+          <span className={css.timeLineLeft}>2011 - 2015</span>
           <h2>中南大学</h2>
           <p>
-            本科 粉体材料科学与工程专业
+            <span className={css.green}>本科</span> {'<'}粉体材料科学与工程专业{'>'}
           </p>
         </li>
       </ul>

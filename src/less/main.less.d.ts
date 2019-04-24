@@ -35,6 +35,8 @@ export const expPage: string;
 export const expPage_context: string;
 export const expPageContext: string;
 export const timeLine: string;
+export const timeLineLeft: string;
+export const green: string;
 export const worksPage: string;
 export const worksPage_worksSet: string;
 export const worksPageWorksSet: string;

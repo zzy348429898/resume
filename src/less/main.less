@@ -171,7 +171,7 @@ ul {
 			margin: auto;
 			text-align: justify;
 			text-indent: 2em;
-			line-height: 1.7em;
+			line-height: 1.4em;
 			// font-weight: bolder
 		}
 
@@ -193,7 +193,7 @@ ul {
 			// background-color: #43bd86;
 			height: 150px;
 			width: 100px;
-			margin: 0 20px;
+			margin: 10px 20px 0 20px;
 
 			& img {
 				width: 100px;
@@ -203,7 +203,7 @@ ul {
 			}
 
 			.description {
-				margin-top: 20px;
+				margin-top: 10px;
 				text-align: center;
 
 				& span {
@@ -440,15 +440,19 @@ ul {
 		@timeLineCircleR: 7.5px;
 		.timeLine {
 			position: relative;
+			margin-top: -50px;
 			max-width: 500px;
+			min-width: 300px;
+			padding-left: 40px;
 			&::before {
 				content: "";
 				position: absolute;
 				top:0;
-				left: @timeLineOffset;
+				left: @timeLineOffset + 40px;
 				height: 150%;
 				border-left: 4px solid white;
 			}
+
 			li{
 				position: relative;
 				color: white;
@@ -464,12 +468,32 @@ ul {
 					border:2px solid white;
 					background-color: #c58248;
 				}
+				.timeLineLeft {
+					display: block;
+					position: absolute;
+					top:38%;
+					left: -150px;
+					color: #eaba5d;
+					@media screen {
+						@media (max-width: 768px){
+							left:unset;
+							top: unset;
+							right: 40px;
+							font-size: 1.3em;
+						}
+					}
+				}
 				h2{
 					margin: 10px 0;
 				}
 				p{
-					line-height: 1.2em;
+					line-height: 1.4em;
+					margin-bottom: 10px;
+					.green{
+						color: #59ffac;
+					}
 				}
+
 			}
 		}
 	}
