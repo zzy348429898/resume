@@ -45,7 +45,7 @@ const aboutMePage: React.StatelessComponent = () => (
           </li>
         </ul>
       </div>
-      <p>硕士期间使用python神经网络对实验数据处理，从此走上计算机学习之路。从2017年3月开始，陆续自学JavaScript、Java、TypeScript、数据结构、网络过程和web前后端等知识，对web应用有一定了解，决定毕业后从事web前端工作。</p>
+      <p>硕士(材料专业)期间使用python神经网络建立材料流变应力模型，从此走上计算机学习之路。从2017年3月开始，陆续自学JavaScript、Java、TypeScript、数据结构、网络过程和web前后端等知识，对web应用有一定了解，决定毕业后从事web前端工作。</p>
     </div>
   </div>
 );

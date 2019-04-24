@@ -5,10 +5,10 @@ const path = require('path');
 let config = {
   mode:'production',
   output: {
-    path: path.resolve(__dirname, '../dist')
+    path: path.resolve(__dirname, '../dist'),
     // filename: 'bundle.js',
     // filename: '[name]_[id]_[hash]',
-    // publicPath: 'dist/'
+    publicPath: 'dist/'
   }
 };
 // console.log(merge(baseConfig, config));
