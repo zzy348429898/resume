@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as css from '../less/main.less';
+import { hot } from 'react-hot-loader';
 const degree = require('../img/ic_degree.svg');
 const age = require('../img/age.svg');
 const location = require('../img/location.svg');
@@ -49,4 +50,4 @@ const aboutMePage: React.StatelessComponent = () => (
     </div>
   </div>
 );
-export default aboutMePage;
+export default hot(module)(aboutMePage);

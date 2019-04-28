@@ -2,6 +2,7 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import SliderContext from './SliderContext';
 import * as style from '../less/main.less';
+import { hot } from 'react-hot-loader';
 
 export interface SliderProps {
   children: PropTypes.ReactNodeArray,
@@ -15,6 +16,7 @@ export interface SliderState {
   pageLength: number,
   currentPage: number
 }
+@hot(module)
 export default class Slider extends React.Component<SliderProps, SliderState>{
   constructor(props: SliderProps) {
     super(props);

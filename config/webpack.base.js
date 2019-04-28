@@ -12,28 +12,61 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: '[name]_[contenthash].js'
+    filename: '[name]_[hash].js'
   },
-  resolve:{
+  resolve: {
     extensions: ['.tsx', 'ts', '.jsx', '.js', '.json', 'less', 'css']
   },
   module: {
     rules: [
+      // {
+      //   test: /\.jsx?$/,
+      //   exclude: /node_modules/,
+      //   loader: 'babel-loader',
+      //   options: {
+      //     presets: [['es2015'], ['stage-0'], ['react']]
+      //   }
+      // },
+      // {
+      //   test:/\.tsx?$/,
+      //   exclude: /node_modules/,
+      //   loader: 'ts-loader'
+      // },
       {
-        test: /\.jsx?$/,
+        test: /\.(j|t)sx?$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
-        options: {
-          presets: [['es2015'], ['stage-0'], ['react']]
+        use: {
+          loader: 'babel-loader',
+          options: {
+            cacheDirectory: true,
+            babelrc: false,
+            presets: [
+              [
+                '@babel/preset-env',
+                {
+                  targets: {
+                    browsers: 'last 2 versions'
+                  }
+                } // or whatever your project requires
+              ],
+              '@babel/preset-typescript',
+              '@babel/preset-react'
+            ],
+            plugins: [
+              // plugin-proposal-decorators is only needed if you're using experimental decorators in TypeScript
+              ['@babel/plugin-proposal-decorators', {
+                legacy: true
+              }],
+              ['@babel/plugin-proposal-class-properties', {
+                loose: true
+              }],
+              'react-hot-loader/babel'
+            ]
+          }
         }
       },
       {
-        test:/\.tsx?$/,
-        exclude: /node_modules/,
-        loader: 'ts-loader'
-      },
-      {
-        test:/\.less$/,
+        test: /\.less$/,
         include: path.resolve('src/'),
         use: [
           // devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
@@ -61,7 +94,7 @@ module.exports = {
         ]
       },
       {
-        test:/\.css$/,
+        test: /\.css$/,
         include: path.resolve('src/'),
         use: [
           // 'style-loader',

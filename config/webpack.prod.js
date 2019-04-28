@@ -8,8 +8,15 @@ let config = {
     path: path.resolve(__dirname, '../dist'),
     // filename: 'bundle.js',
     // filename: '[name]_[id]_[hash]',
+    filename: '[name]_[contenthash].js',
     publicPath: ''
-  }
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name]_[contenthash]_[hash].css',
+      chunkFilename: '[id].css'
+    })
+  ]
 };
 // console.log(merge(baseConfig, config));
 module.exports = merge(baseConfig, config);
