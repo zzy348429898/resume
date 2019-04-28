@@ -1,6 +1,7 @@
 const merge = require('webpack-merge');//webpack配置文件合并工具
 const baseConfig = require('./webpack.base.js');//基础配置
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 let config = {
   mode:'production',
