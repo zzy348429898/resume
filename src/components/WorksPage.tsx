@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as css from '../less/main.less';
 
 const resume = require('../img/resume.jpg');
-const gallery = require('../img/gallery.jpg');
+const gallery = require('../img/gallery.png');
 
 const WorksPage: React.StatelessComponent = () => (
   <div className={css.worksPage}>
@@ -10,11 +10,11 @@ const WorksPage: React.StatelessComponent = () => (
     <div className={css.worksPage_worksSet}>
       <div className={css.workItem}>
         <img src={resume} alt=""/>
-        <a href="https://zhouzhaoyuan.top/resume/dist" target="view_window">本网站</a>
+        <a href="https://zhouzhaoyuan.top/resume" target="view_window">本网站</a>
       </div>
       <div className={css.workItem}>
         <img src={gallery} alt=""/>
-        <a href="https://zhouzhaoyuan.top/" target="view_window">我的相册</a>
+        <a href="https://zhouzhaoyuan.top/gallery" target="view_window">我的相册</a>
       </div>
     </div>
   </div>
